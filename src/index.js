@@ -3,6 +3,9 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Counter from './Counter';
+import Todos from './Todo';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -10,6 +13,11 @@ root.render(
     <App />
   </React.StrictMode>
 );
+
+const counter = ReactDOM.createRoot(document.getElementById("counter"));
+counter.render(<Counter /> );
+const todo = ReactDOM.createRoot(document.getElementById("todo"));
+todo.render(<Todos />);
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
